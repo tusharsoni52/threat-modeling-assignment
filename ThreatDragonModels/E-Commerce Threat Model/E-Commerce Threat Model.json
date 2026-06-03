@@ -728,11 +728,11 @@
           },
           {
             "position": {
-              "x": 221,
-              "y": 448.0000000000023
+              "x": 40,
+              "y": 450.0000000000015
             },
             "size": {
-              "width": 980,
+              "width": 1370,
               "height": 100
             },
             "attrs": {
@@ -775,7 +775,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Customer"
+                "text": "A1\nCustomer"
               },
               "body": {
                 "stroke": "#333333",
@@ -871,7 +871,7 @@
             "id": "5e3bca7f-5f65-429e-95d8-d8063a87db25",
             "data": {
               "type": "tm.Actor",
-              "name": "Customer",
+              "name": "A1\nCustomer",
               "description": "External customer purchasing products",
               "isTrustBoundary": false,
               "outOfScope": false,
@@ -892,7 +892,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Administrator"
+                "text": "A2\nAdministrator"
               },
               "body": {
                 "stroke": "#333333",
@@ -988,7 +988,7 @@
             "id": "3201ab5f-4646-4648-8d85-c4e64c7033fb",
             "data": {
               "type": "tm.Actor",
-              "name": "Administrator",
+              "name": "A2\nAdministrator",
               "description": "Administrator managing products and users",
               "isTrustBoundary": false,
               "outOfScope": false,
@@ -1009,7 +1009,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Product\nService"
+                "text": "P2\nProduct\nService"
               },
               "body": {
                 "stroke": "#333333",
@@ -1105,7 +1105,7 @@
             "id": "7a3c93fd-9651-4655-86e1-c92f44ac8db0",
             "data": {
               "type": "tm.Process",
-              "name": "Product\nService",
+              "name": "P2\nProduct\nService",
               "description": "Provides product browsing and search",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1129,7 +1129,7 @@
             },
             "attrs": {
               "text": {
-                "text": "User Database"
+                "text": "D1\nUser Database"
               },
               "topLine": {
                 "strokeWidth": 1.5,
@@ -1228,7 +1228,7 @@
             "id": "315cb4c3-36a2-44ac-b922-f89f38fbc2dd",
             "data": {
               "type": "tm.Store",
-              "name": "User Database",
+              "name": "D1\nUser Database",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1253,7 +1253,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Product Database"
+                "text": "D2\nProduct Database"
               },
               "topLine": {
                 "strokeWidth": 1.5,
@@ -1352,7 +1352,7 @@
             "id": "9fcfb6ae-402e-45db-94f1-c142c6d291d8",
             "data": {
               "type": "tm.Store",
-              "name": "Product Database",
+              "name": "D2\nProduct Database",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1377,7 +1377,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Order Database"
+                "text": "D3\nOrder Database"
               },
               "topLine": {
                 "strokeWidth": 1.5,
@@ -1476,7 +1476,7 @@
             "id": "00e6375c-0d24-4a71-8204-917f07e77f90",
             "data": {
               "type": "tm.Store",
-              "name": "Order Database",
+              "name": "D3\nOrder Database",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1666,7 +1666,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Cart Operations",
+              "name": "Checkout Request",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1682,7 +1682,7 @@
               ]
             },
             "labels": [
-              "Cart Operations"
+              "Checkout Request"
             ],
             "id": "65e3f73e-f0da-4e89-8980-a674afd93047",
             "source": {
@@ -2012,7 +2012,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Shopping\nCart\nService"
+                "text": "P3\nShopping\nCart\nService"
               },
               "body": {
                 "stroke": "#333333",
@@ -2108,7 +2108,7 @@
             "id": "ab418cdf-b25e-42f1-bd6c-abfd2e172660",
             "data": {
               "type": "tm.Process",
-              "name": "Shopping\nCart\nService",
+              "name": "P3\nShopping\nCart\nService",
               "description": "Provides product browsing and search",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -2132,7 +2132,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Order\nService"
+                "text": "P4\nOrder\nService"
               },
               "body": {
                 "stroke": "#333333",
@@ -2228,7 +2228,7 @@
             "id": "4b3994b2-a7fe-402a-90ac-5600d0d5efa9",
             "data": {
               "type": "tm.Process",
-              "name": "Order\nService",
+              "name": "P4\nOrder\nService",
               "description": "Provides product browsing and search",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -2252,7 +2252,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Admin\nService"
+                "text": "P5\nAdmin\nService"
               },
               "body": {
                 "stroke": "#333333",
@@ -2348,7 +2348,7 @@
             "id": "c33daf58-2476-4b7c-b31a-b5090e1cca5e",
             "data": {
               "type": "tm.Process",
-              "name": "Admin\nService",
+              "name": "P5\nAdmin\nService",
               "description": "Provides product browsing and search",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -2372,7 +2372,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Authentication\nService"
+                "text": "P1\nAuthentication\nService"
               },
               "body": {
                 "stroke": "#333333",
@@ -2468,7 +2468,7 @@
             "id": "3b85b294-6a36-436f-8488-9c6b3169612f",
             "data": {
               "type": "tm.Process",
-              "name": "Authentication\nService",
+              "name": "P1\nAuthentication\nService",
               "description": "Provides product browsing and search",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -2513,62 +2513,7 @@
                 "x": 700,
                 "y": 190
               }
-            ],
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
-            }
+            ]
           }
         ],
         "description": "Detailed decomposition of E-Commerce System"

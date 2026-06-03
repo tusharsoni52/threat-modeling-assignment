@@ -19,11 +19,11 @@
         "cells": [
           {
             "position": {
-              "x": 509.99999999999955,
-              "y": 30.00000000000165
+              "x": 509.9999999999991,
+              "y": 30.00000000000412
             },
             "size": {
-              "width": 770,
+              "width": 780,
               "height": 280
             },
             "attrs": {
@@ -407,16 +407,16 @@
           },
           {
             "position": {
-              "x": 1085,
+              "x": 1105,
               "y": 140
             },
             "size": {
-              "width": 120,
-              "height": 60
+              "width": 160,
+              "height": 70
             },
             "attrs": {
               "text": {
-                "text": "Customer Database"
+                "text": "E-Commerce Database"
               },
               "topLine": {
                 "strokeWidth": 1.5,
@@ -515,7 +515,7 @@
             "zIndex": 4,
             "data": {
               "type": "tm.Store",
-              "name": "Customer Database",
+              "name": "E-Commerce Database",
               "description": "Stores users, products and orders",
               "outOfScope": false,
               "isTrustBoundary": false,

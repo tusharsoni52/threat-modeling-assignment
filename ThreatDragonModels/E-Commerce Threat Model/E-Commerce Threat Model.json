@@ -687,6 +687,85 @@
         "cells": [
           {
             "position": {
+              "x": 39.99999999999898,
+              "y": 220.00000000000455
+            },
+            "size": {
+              "width": 1370,
+              "height": 170
+            },
+            "attrs": {
+              "label": {
+                "text": "Application Tier"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "d79deb13-dcca-4e09-85df-615c6fd3bb98",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Application Tier",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [
+                "f3d78288-40d7-46ea-9fc1-56075f19041e",
+                "4b5a59d8-87e5-409f-8085-c403e1b09a7d",
+                "11335efd-8637-4bf7-a7b9-dcaa9fda859a",
+                "65e3f73e-f0da-4e89-8980-a674afd93047",
+                "0c2f738e-38c1-42b7-a4c5-12514d4e96cd",
+                "0d464f83-a0bf-4c82-95cf-74b3ef4a8046"
+              ],
+              "containedElements": [
+                "7a3c93fd-9651-4655-86e1-c92f44ac8db0",
+                "ab418cdf-b25e-42f1-bd6c-abfd2e172660",
+                "4b3994b2-a7fe-402a-90ac-5600d0d5efa9",
+                "c33daf58-2476-4b7c-b31a-b5090e1cca5e",
+                "3b85b294-6a36-436f-8488-9c6b3169612f"
+              ]
+            }
+          },
+          {
+            "position": {
+              "x": 221,
+              "y": 448.0000000000023
+            },
+            "size": {
+              "width": 980,
+              "height": 100
+            },
+            "attrs": {
+              "label": {
+                "text": "Database Tier"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "51ce7588-59a8-44d1-bc8e-96375613b626",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Database Tier",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [
+                "0d464f83-a0bf-4c82-95cf-74b3ef4a8046",
+                "79cd04c1-cf89-4178-8e2a-0b7b9a4bb5dd",
+                "5bd17f4f-7e4e-47ed-a670-cd49106d03bd",
+                "464d75f2-d7fe-48a5-a6d0-513d02da892d",
+                "364c0a15-e800-41f2-8375-06cc678c8734"
+              ],
+              "containedElements": [
+                "315cb4c3-36a2-44ac-b922-f89f38fbc2dd",
+                "9fcfb6ae-402e-45db-94f1-c142c6d291d8",
+                "00e6375c-0d24-4a71-8204-917f07e77f90"
+              ]
+            }
+          },
+          {
+            "position": {
               "x": 220,
               "y": 30.000000000000014
             },
@@ -1442,7 +1521,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "d79deb13-dcca-4e09-85df-615c6fd3bb98"
+              ]
             },
             "labels": [
               "Login Credentials"
@@ -1488,7 +1569,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "d79deb13-dcca-4e09-85df-615c6fd3bb98"
+              ]
             },
             "labels": [
               "Browse Products"
@@ -1540,7 +1623,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "d79deb13-dcca-4e09-85df-615c6fd3bb98"
+              ]
             },
             "labels": [
               "Cart Operations"
@@ -1592,7 +1677,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "d79deb13-dcca-4e09-85df-615c6fd3bb98"
+              ]
             },
             "labels": [
               "Cart Operations"
@@ -1644,7 +1731,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "d79deb13-dcca-4e09-85df-615c6fd3bb98"
+              ]
             },
             "labels": [
               "Manage Products"
@@ -1696,7 +1785,10 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "d79deb13-dcca-4e09-85df-615c6fd3bb98",
+                "51ce7588-59a8-44d1-bc8e-96375613b626"
+              ]
             },
             "labels": [
               "User Data"
@@ -1742,7 +1834,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "51ce7588-59a8-44d1-bc8e-96375613b626"
+              ]
             },
             "labels": [
               "Product Data"
@@ -1788,7 +1882,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "51ce7588-59a8-44d1-bc8e-96375613b626"
+              ]
             },
             "labels": [
               "Cart Product Data"
@@ -1834,7 +1930,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "51ce7588-59a8-44d1-bc8e-96375613b626"
+              ]
             },
             "labels": [
               "Order Details"
@@ -1880,7 +1978,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "51ce7588-59a8-44d1-bc8e-96375613b626"
+              ]
             },
             "labels": [
               "Update Product Data"
@@ -2397,7 +2497,7 @@
               "containedElements": []
             },
             "labels": [
-              "Trust Boundary"
+              "Internet Boundary"
             ],
             "id": "630348a7-d028-4d9c-b06f-8ab2dc0c5ab6",
             "source": {
@@ -2406,14 +2506,69 @@
             },
             "target": {
               "x": 1410,
-              "y": 200
+              "y": 190
             },
             "vertices": [
               {
-                "x": 280,
+                "x": 700,
                 "y": 190
               }
-            ]
+            ],
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            }
           }
         ],
         "description": "Detailed decomposition of E-Commerce System"

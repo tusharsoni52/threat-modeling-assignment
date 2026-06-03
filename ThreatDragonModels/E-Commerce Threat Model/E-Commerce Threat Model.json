@@ -714,8 +714,8 @@
                 "11335efd-8637-4bf7-a7b9-dcaa9fda859a",
                 "0c2f738e-38c1-42b7-a4c5-12514d4e96cd",
                 "0d464f83-a0bf-4c82-95cf-74b3ef4a8046",
-                "65e3f73e-f0da-4e89-8980-a674afd93047",
-                "f3d78288-40d7-46ea-9fc1-56075f19041e"
+                "f3d78288-40d7-46ea-9fc1-56075f19041e",
+                "65e3f73e-f0da-4e89-8980-a674afd93047"
               ],
               "containedElements": [
                 "7a3c93fd-9651-4655-86e1-c92f44ac8db0",
@@ -2106,80 +2106,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Checkout Request",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": true,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [
-                {
-                  "id": "a0244723-6023-4006-a995-1d37e8e048ca",
-                  "title": "T25 - Order Repudiation",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Denial of service",
-                  "description": "A customer denies placing an order or performing a transaction after it has been processed.",
-                  "mitigation": "Maintain audit logs, transaction records, timestamps, digital signatures, and non-repudiation mechanisms.",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 28,
-                  "score": "5"
-                }
-              ],
-              "trustBoundaryIds": [
-                "d79deb13-dcca-4e09-85df-615c6fd3bb98"
-              ],
-              "threatFrequency": {
-                "tampering": 0,
-                "informationDisclosure": 0,
-                "denialOfService": 1
-              }
-            },
-            "labels": [
-              "Checkout Request"
-            ],
-            "id": "65e3f73e-f0da-4e89-8980-a674afd93047",
-            "source": {
-              "x": 350,
-              "y": 90
-            },
-            "target": {
-              "cell": "4b3994b2-a7fe-402a-90ac-5600d0d5efa9",
-              "port": "39e53303-ddad-45fb-9b99-fe01a3f7604c"
-            },
-            "vertices": [
-              {
-                "x": 810,
-                "y": 210
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Login Credentials",
               "description": "",
               "outOfScope": false,
@@ -2226,6 +2152,80 @@
               "cell": "3b85b294-6a36-436f-8488-9c6b3169612f",
               "port": "39e53303-ddad-45fb-9b99-fe01a3f7604c"
             }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Checkout Request",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "a0244723-6023-4006-a995-1d37e8e048ca",
+                  "title": "T25 - Order Repudiation",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "A customer denies placing an order after the transaction has been processed. Lack of audit trails and transaction records makes verification difficult.",
+                  "mitigation": "Maintain audit logs, timestamps, transaction records, digital signatures, and non-repudiation controls.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 28,
+                  "score": "5"
+                }
+              ],
+              "trustBoundaryIds": [
+                "d79deb13-dcca-4e09-85df-615c6fd3bb98"
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 1
+              }
+            },
+            "labels": [
+              "Checkout Request"
+            ],
+            "id": "65e3f73e-f0da-4e89-8980-a674afd93047",
+            "source": {
+              "x": 350,
+              "y": 90
+            },
+            "target": {
+              "cell": "4b3994b2-a7fe-402a-90ac-5600d0d5efa9",
+              "port": "39e53303-ddad-45fb-9b99-fe01a3f7604c"
+            },
+            "vertices": [
+              {
+                "x": 810,
+                "y": 210
+              }
+            ]
           },
           {
             "position": {
@@ -2729,13 +2729,6 @@
                 "denialOfService": 0,
                 "elevationOfPrivilege": 1
               }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {

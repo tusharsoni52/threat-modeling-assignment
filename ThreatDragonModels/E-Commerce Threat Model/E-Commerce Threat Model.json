@@ -710,12 +710,12 @@
               "isTrustBoundary": true,
               "hasOpenThreats": false,
               "crossingFlows": [
-                "f3d78288-40d7-46ea-9fc1-56075f19041e",
                 "4b5a59d8-87e5-409f-8085-c403e1b09a7d",
                 "11335efd-8637-4bf7-a7b9-dcaa9fda859a",
-                "65e3f73e-f0da-4e89-8980-a674afd93047",
                 "0c2f738e-38c1-42b7-a4c5-12514d4e96cd",
-                "0d464f83-a0bf-4c82-95cf-74b3ef4a8046"
+                "0d464f83-a0bf-4c82-95cf-74b3ef4a8046",
+                "65e3f73e-f0da-4e89-8980-a674afd93047",
+                "f3d78288-40d7-46ea-9fc1-56075f19041e"
               ],
               "containedElements": [
                 "7a3c93fd-9651-4655-86e1-c92f44ac8db0",
@@ -1677,74 +1677,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Login Credentials",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": true,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [
-                {
-                  "id": "bbeab622-03a1-497a-b2f1-2f0726981e47",
-                  "title": "T23 - Credential Interception",
-                  "status": "Open",
-                  "severity": "High",
-                  "type": "Information disclosure",
-                  "description": "User credentials are intercepted during transmission due to insecure communication channels.",
-                  "mitigation": "Use HTTPS/TLS, secure cookies, HSTS, certificate validation, and encrypted communication channels.",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 26,
-                  "score": "9"
-                }
-              ],
-              "trustBoundaryIds": [
-                "d79deb13-dcca-4e09-85df-615c6fd3bb98"
-              ],
-              "threatFrequency": {
-                "tampering": 0,
-                "informationDisclosure": 1,
-                "denialOfService": 0
-              }
-            },
-            "labels": [
-              "Login Credentials"
-            ],
-            "id": "f3d78288-40d7-46ea-9fc1-56075f19041e",
-            "source": {
-              "x": 225,
-              "y": 90
-            },
-            "target": {
-              "cell": "3b85b294-6a36-436f-8488-9c6b3169612f",
-              "port": "39e53303-ddad-45fb-9b99-fe01a3f7604c"
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Browse Products",
               "description": "",
               "outOfScope": false,
@@ -1849,80 +1781,6 @@
               {
                 "x": 620,
                 "y": 220
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Checkout Request",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": true,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [
-                {
-                  "id": "a0244723-6023-4006-a995-1d37e8e048ca",
-                  "title": "T25 - Order Repudiation",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Denial of service",
-                  "description": "A customer denies placing an order or performing a transaction after it has been processed.",
-                  "mitigation": "Maintain audit logs, transaction records, timestamps, digital signatures, and non-repudiation mechanisms.",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 28,
-                  "score": "5"
-                }
-              ],
-              "trustBoundaryIds": [
-                "d79deb13-dcca-4e09-85df-615c6fd3bb98"
-              ],
-              "threatFrequency": {
-                "tampering": 0,
-                "informationDisclosure": 0,
-                "denialOfService": 1
-              }
-            },
-            "labels": [
-              "Checkout Request"
-            ],
-            "id": "65e3f73e-f0da-4e89-8980-a674afd93047",
-            "source": {
-              "x": 350,
-              "y": 90
-            },
-            "target": {
-              "cell": "4b3994b2-a7fe-402a-90ac-5600d0d5efa9",
-              "port": "39e53303-ddad-45fb-9b99-fe01a3f7604c"
-            },
-            "vertices": [
-              {
-                "x": 810,
-                "y": 210
               }
             ]
           },
@@ -2226,6 +2084,148 @@
                 "y": 570
               }
             ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Checkout Request",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "a0244723-6023-4006-a995-1d37e8e048ca",
+                  "title": "T25 - Order Repudiation",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "A customer denies placing an order or performing a transaction after it has been processed.",
+                  "mitigation": "Maintain audit logs, transaction records, timestamps, digital signatures, and non-repudiation mechanisms.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 28,
+                  "score": "5"
+                }
+              ],
+              "trustBoundaryIds": [
+                "d79deb13-dcca-4e09-85df-615c6fd3bb98"
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 1
+              }
+            },
+            "labels": [
+              "Checkout Request"
+            ],
+            "id": "65e3f73e-f0da-4e89-8980-a674afd93047",
+            "source": {
+              "x": 350,
+              "y": 90
+            },
+            "target": {
+              "cell": "4b3994b2-a7fe-402a-90ac-5600d0d5efa9",
+              "port": "39e53303-ddad-45fb-9b99-fe01a3f7604c"
+            },
+            "vertices": [
+              {
+                "x": 810,
+                "y": 210
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Login Credentials",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "bbeab622-03a1-497a-b2f1-2f0726981e47",
+                  "title": "T23 - Credential Interception",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "User credentials are intercepted during transmission due to insecure communication channels.",
+                  "mitigation": "Use HTTPS/TLS, secure cookies, HSTS, certificate validation, and encrypted communication channels.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 26,
+                  "score": "9"
+                }
+              ],
+              "trustBoundaryIds": [
+                "d79deb13-dcca-4e09-85df-615c6fd3bb98"
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Login Credentials"
+            ],
+            "id": "f3d78288-40d7-46ea-9fc1-56075f19041e",
+            "source": {
+              "x": 225,
+              "y": 90
+            },
+            "target": {
+              "cell": "3b85b294-6a36-436f-8488-9c6b3169612f",
+              "port": "39e53303-ddad-45fb-9b99-fe01a3f7604c"
+            }
           },
           {
             "position": {
@@ -2729,6 +2729,13 @@
                 "denialOfService": 0,
                 "elevationOfPrivilege": 1
               }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {

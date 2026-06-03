@@ -686,35 +686,6 @@
         "version": "2.6.2",
         "cells": [
           {
-            "shape": "trust-boundary-curve",
-            "width": 200,
-            "height": 100,
-            "zIndex": -1,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Boundary",
-              "name": "Trust Boundary",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false,
-              "crossingFlows": [],
-              "containedElements": []
-            },
-            "labels": [
-              "Trust Boundary"
-            ],
-            "id": "630348a7-d028-4d9c-b06f-8ab2dc0c5ab6",
-            "source": {
-              "x": 130,
-              "y": 220
-            },
-            "target": {
-              "x": 1410,
-              "y": 220
-            },
-            "vertices": []
-          },
-          {
             "position": {
               "x": 220,
               "y": 30.000000000000014
@@ -2409,6 +2380,40 @@
               "privilegeLevel": "",
               "threats": []
             }
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 15,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Internet Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": []
+            },
+            "labels": [
+              "Trust Boundary"
+            ],
+            "id": "630348a7-d028-4d9c-b06f-8ab2dc0c5ab6",
+            "source": {
+              "x": 40,
+              "y": 190
+            },
+            "target": {
+              "x": 1410,
+              "y": 200
+            },
+            "vertices": [
+              {
+                "x": 280,
+                "y": 190
+              }
+            ]
           }
         ],
         "description": "Detailed decomposition of E-Commerce System"

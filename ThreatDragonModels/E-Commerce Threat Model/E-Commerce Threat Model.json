@@ -687,8 +687,8 @@
         "cells": [
           {
             "position": {
-              "x": 39.99999999999898,
-              "y": 220.00000000000455
+              "x": 40,
+              "y": 215
             },
             "size": {
               "width": 1370,
@@ -710,11 +710,11 @@
               "isTrustBoundary": true,
               "hasOpenThreats": false,
               "crossingFlows": [
-                "4b5a59d8-87e5-409f-8085-c403e1b09a7d",
                 "11335efd-8637-4bf7-a7b9-dcaa9fda859a",
                 "0c2f738e-38c1-42b7-a4c5-12514d4e96cd",
                 "0d464f83-a0bf-4c82-95cf-74b3ef4a8046",
                 "f3d78288-40d7-46ea-9fc1-56075f19041e",
+                "4b5a59d8-87e5-409f-8085-c403e1b09a7d",
                 "65e3f73e-f0da-4e89-8980-a674afd93047"
               ],
               "containedElements": [
@@ -1164,13 +1164,6 @@
                 "denialOfService": 1,
                 "elevationOfPrivilege": 0
               }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -1343,6 +1336,13 @@
                 "informationDisclosure": 1,
                 "denialOfService": 1
               }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -1662,80 +1662,6 @@
                 "denialOfService": 0
               }
             }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Browse Products",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": true,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [
-                {
-                  "id": "73423de2-878d-4e7c-a061-004113cea7a4",
-                  "title": "T24 - Request Manipulation",
-                  "status": "Open",
-                  "severity": "High",
-                  "type": "Tampering",
-                  "description": "An attacker modifies requests in transit to alter product information, pricing, or transaction details.",
-                  "mitigation": "Implement HTTPS, request validation, message integrity verification, and secure API design.",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 27,
-                  "score": "7"
-                }
-              ],
-              "trustBoundaryIds": [
-                "d79deb13-dcca-4e09-85df-615c6fd3bb98"
-              ],
-              "threatFrequency": {
-                "tampering": 1,
-                "informationDisclosure": 0,
-                "denialOfService": 0
-              }
-            },
-            "labels": [
-              "Browse Products"
-            ],
-            "id": "4b5a59d8-87e5-409f-8085-c403e1b09a7d",
-            "source": {
-              "x": 254,
-              "y": 90
-            },
-            "target": {
-              "cell": "7a3c93fd-9651-4655-86e1-c92f44ac8db0",
-              "port": "39e53303-ddad-45fb-9b99-fe01a3f7604c"
-            },
-            "vertices": [
-              {
-                "x": 400,
-                "y": 210
-              }
-            ]
           },
           {
             "shape": "flow",
@@ -2181,6 +2107,80 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
+              "name": "Browse Products",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "73423de2-878d-4e7c-a061-004113cea7a4",
+                  "title": "T24 - Request Manipulation",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "An attacker modifies requests in transit to alter product information, pricing, or transaction details.",
+                  "mitigation": "Implement HTTPS, request validation, message integrity verification, and secure API design.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 27,
+                  "score": "7"
+                }
+              ],
+              "trustBoundaryIds": [
+                "d79deb13-dcca-4e09-85df-615c6fd3bb98"
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Browse Products"
+            ],
+            "id": "4b5a59d8-87e5-409f-8085-c403e1b09a7d",
+            "source": {
+              "x": 254,
+              "y": 90
+            },
+            "target": {
+              "cell": "7a3c93fd-9651-4655-86e1-c92f44ac8db0",
+              "port": "39e53303-ddad-45fb-9b99-fe01a3f7604c"
+            },
+            "vertices": [
+              {
+                "x": 400,
+                "y": 210
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
               "name": "Checkout Request",
               "description": "",
               "outOfScope": false,
@@ -2221,7 +2221,7 @@
             "id": "65e3f73e-f0da-4e89-8980-a674afd93047",
             "source": {
               "x": 350,
-              "y": 90
+              "y": 100
             },
             "target": {
               "cell": "4b3994b2-a7fe-402a-90ac-5600d0d5efa9",
